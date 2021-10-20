@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/contact.css">
+    <title>Pooja's Portfolio</title>
+</head>
+
+<body>
+      <nav>
+        <ul>
+            <li><a href="first.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="home.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Pooja's Portfolio</h1>
+        <button id="clearBtn" class="btn">Clear Form</button> 
+    </header>
+    <main>
+       <div class="formDiv">
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email" required>
+
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" rows="3" cols="20" required></textarea>
+              <span></span>
+            <input type="submit" value="Submit" id="submitBtn" class="btn">         
+        </form>
+        </div>
+        <!-- Modal -->
+        <div id="myModal" class="modal">
+         <!-- Modal content -->
+          <div class="modal-content">
+             <h4>Thank you for your message.<br></h4>
+             <p><br>I will get in touch with you soon!!</p>
+             <button id="closeBtn">Close</button>
+          </div>
+        </div>
+
+        <!-- Display Messages -->
+        <div class="messageDiv">
+           <h2>Messages</h2>
+           <button class="btn" id="deleteBtn">Delete Messages</button>
+        </div>
+        
+        <div class="cardDiv">
+          <dl id="messages">
+            <!-- <div class="card">
+                <dt class="dt1">Pooja:raopooj@gmail.com</dt>
+                <dd class="dt2">Message:Call me</dd>
+            </div> -->
+          </dl> 
+        </div>
+    </main>
+    <footer>
+          <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by <a href="https://www.linkedin.com/in/pooja-r-a-o/" target="_blank">Pooja Rao</a>.
+    </footer>
+    <script src="./form.js" async></script>
+</body>
+
+</html>

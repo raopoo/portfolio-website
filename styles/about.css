@@ -1,0 +1,15 @@
+.infoDiv{
+     display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.myPic{
+    padding: 2rem;
+}
+.myInfo{
+     padding: 2rem;
+}
+img{
+    width: 90%;
+    /* height: 400px; */
+}
