@@ -32,7 +32,7 @@ h1{
     letter-spacing: 15px;
 }
 h1,h3{
-    color: rgb(146, 197, 206);
+    color: rgb(81, 121, 128);
     display: block;
     text-transform: uppercase;
     animation: moveInTop 1.5s ease-out;
