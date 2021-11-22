@@ -1,12 +1,30 @@
+@use "pallette";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,600&display=swap");
-
 
 $primaryfont: "Montserrat", sans-serif;
 
-body{
+body {
     font-family: $primaryfont;
 }
 
-.myinfo{
-    font-weight: 600;
+// .myinfo{
+//     font-weight: 600;
+// }
+
+.text {
+    color: pallette.$textsecondary;
+    display: block;
+    text-transform: uppercase;
+
+    &__mainHeading {
+        font-size: 40px;
+        font-weight: 600;
+        letter-spacing: 15px;
+    }
+
+    &__secondaryHeading {
+        font-size: 30px;
+        font-weight: 500;
+        letter-spacing: 15px;
+    }
 }

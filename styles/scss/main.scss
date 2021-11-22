@@ -2,13 +2,18 @@
 @import 'nav';
 @import 'footer';
 @import 'typography';
+@import 'index';
+@import 'contact';
+@import 'about';
+@import 'projects';
+
 
 * {
     padding: 0;
     margin: 0;
 }
 body {
-    font-family: "Montserrat", sans-serif;
+    // font-family: "Montserrat", sans-serif;
     background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
     color: white;
 }

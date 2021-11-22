@@ -1,48 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,600&display=swap');
 *{
     margin: 0;
     padding: 0;
 }
-body{
-    font-family: 'Montserrat', sans-serif;
-}
-#myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-}
-main{ 
+
+.container{
     text-align: center;
     height: 100vh;
     position: relative;
+
+    &__main-div{
+        position: absolute;
+        top:40%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+
+    }
 }
-#mainDiv{
-    /* color: black; */
-    position: absolute;
-    top:40%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
+
+
+.text{
+    animation: moveInTop 1.5s ease-out; 
 }
-h1{
-    font-size: 40px;
-    font-weight: 600;
-    letter-spacing: 15px;
-}
-h1,h3{
-    color: rgb(81, 121, 128);
-    display: block;
-    text-transform: uppercase;
-    animation: moveInTop 1.5s ease-out;
-    
-}
-h3{
-     font-size: 30px;
-    font-weight: 500;
-    letter-spacing: 15px;
-}
+
 
 .btn:link,.btn:visited{
     text-transform: uppercase;
@@ -83,12 +63,12 @@ h3{
 .btn-home{
     animation: moveInLeft 2s ease-out 0.5s;
     animation-fill-mode: backwards;
-    padding: 1.5rem;
+    padding: 0.8rem 2rem;
 }
 .btn-contact{
     animation: moveInRight 2s ease-out .5s;
     animation-fill-mode: backwards;
-    padding:1.5rem 2rem;
+    padding:0.8rem 2.6rem;
 }
 @keyframes moveInLeft{
     0%{
