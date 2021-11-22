@@ -1,0 +1,17 @@
+
+.nav{
+    &__unordered{
+        display: flex;
+    justify-content:space-around;
+    align-items: center;
+    list-style-type: none;
+
+    &__list{
+        margin: 20px;
+        &__item{
+            text-decoration: none;
+            color: white;
+        }
+    }
+    }
+}

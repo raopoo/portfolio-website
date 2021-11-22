@@ -1,0 +1,22 @@
+@use 'pallette';
+@import 'nav';
+@import 'footer';
+@import 'typography';
+
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+    background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+    color: white;
+}
+header {
+    text-align: center;
+    /* margin: 20px; */
+    padding: 20px;
+}
+h1 {
+    margin-bottom: 20px;
+}
