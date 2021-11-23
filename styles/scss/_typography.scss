@@ -28,3 +28,18 @@ body {
         letter-spacing: 15px;
     }
 }
+
+.myinfo-text{
+    &__header{
+        font-size: 30px;
+        font-weight: 600;
+    }
+    &__secondary-header{
+        font-size: 22px;
+        font-weight: 500;
+    }
+    &__para{
+        font-size: 18px;
+        font-weight: 400;
+    }
+}

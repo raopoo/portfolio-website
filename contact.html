@@ -9,6 +9,12 @@
     <!-- <link rel="stylesheet" href="./styles/styles.css"> -->
     <link rel="stylesheet" href="./styles/contact.css">
     <title>Pooja's Portfolio</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script type="text/javascript">
+(function() {
+emailjs.init("user_99vg3YcmXzSCVIjuvJ5Wh");
+})();
+</script>
 </head>
 
 <body>
@@ -26,17 +32,18 @@
     </header>
     <main>
        <div class="formDiv">
-        <form id="contactForm">
+        <form id="contact-form">
+          <input type="hidden" name="contact_number">
             <label for="name">Name:</label>
-            <input type="text" name="name" id="name" required>
+            <input type="text" name="user_name" id="name" required>
             
             <label for="email">Email:</label>
-            <input type="text" name="email" id="email" required>
+            <input type="text" name="user_email" id="email" required>
 
             <label for="message">Message:</label>
             <textarea name="message" id="message" rows="3" cols="20" required></textarea>
               <span></span>
-            <input type="submit" value="Submit" id="submitBtn" class="btn">         
+            <input type="submit" value="Send" id="submitBtn" class="btn">         
         </form>
         </div>
         <!-- Modal -->
@@ -48,24 +55,17 @@
              <button id="closeBtn">Close</button>
           </div>
         </div>
-
-        <!-- Display Messages -->
-        <div class="messageDiv">
-           <h2>Messages</h2>
-           <button class="btn" id="deleteBtn">Delete Messages</button>
-        </div>
-        
-        <div class="cardDiv">
-          <dl id="messages">
-            <!-- <div class="card">
-                <dt class="dt1">Pooja:raopooj@gmail.com</dt>
-                <dd class="dt2">Message:Call me</dd>
-            </div> -->
-          </dl> 
-        </div>
     </main>
     <footer class="footer">
       <p>Copyright &copy; 2021 All Rights Reserved by <a class="footer__link" href="https://www.linkedin.com/in/pooja-r-a-o/" target="_blank">Pooja Rao</a>.
+        
+        <div class="footer__icons">
+          <p>Contact Me</p>
+          <a href="mailto:raopooj@gmail.com"><img src="./images/email.png" alt="" /></a> 
+          <a href="https://github.com/raopoo"><img src="./images/github.png" alt="" /></a>
+           <a href="https://www.linkedin.com/in/pooja-r-a-o/"> <img src="./images/linkedin.png" alt="" /></a>
+          
+       </div>
 </footer>
     <script src="./form.js" async></script>
 </body>

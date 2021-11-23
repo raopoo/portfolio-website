@@ -1,3 +1,4 @@
 Welcome to my portfolio. 
-You can view my project by cloing the project on VS code.  
+The link for the portfolio page is: https://raopoo.github.io/portfolio-website/
 The Protofolio has a link to some of my projects that in turn connects to github. 
+I have used Scss and BEM which makes CSS easy to use. 

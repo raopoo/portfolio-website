@@ -15,6 +15,7 @@
 
 .footer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -23,6 +24,10 @@
 .footer__link {
   text-decoration: none;
   color: white;
+}
+.footer__icons {
+  margin: 10px;
+  padding: 10px;
 }
 
 body {
@@ -43,6 +48,19 @@ body {
   font-size: 30px;
   font-weight: 500;
   letter-spacing: 15px;
+}
+
+.myinfo-text__header {
+  font-size: 30px;
+  font-weight: 600;
+}
+.myinfo-text__secondary-header {
+  font-size: 22px;
+  font-weight: 500;
+}
+.myinfo-text__para {
+  font-size: 18px;
+  font-weight: 400;
 }
 
 * {
@@ -155,7 +173,7 @@ body {
     transform: translate(0);
   }
 }
-#contactForm {
+#contact-form {
   height: 15rem;
   width: 50%;
   display: grid;
@@ -264,30 +282,22 @@ body {
   border: none;
 }
 
-.infoDiv {
-  /* display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px; */
+.about-info {
   display: flex;
-  /* flex-wrap: wrap; */
 }
-
-.myPic {
+.about-info__my-pic {
   padding: 2rem;
   width: 50%;
 }
-
-.myInfo {
-  padding: 2rem;
-  width: 50%;
-}
-
-img {
+.about-info__my-pic--img {
   width: 80%;
-  /* height: 400px; */
+}
+.about-info__my-info {
+  padding: 2rem;
+  width: 50%;
 }
 
-.projDiv {
+.projdiv {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
@@ -296,7 +306,6 @@ img {
 
 .projPic {
   border-radius: 20px;
-  /* box-shadow: 7px 7px 5px 0px rgba(199, 241, 241, 0.52); */
   height: 15rem;
   width: 15rem;
 }

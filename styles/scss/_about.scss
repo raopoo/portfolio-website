@@ -1,20 +1,21 @@
-.infoDiv{
-    /* display: grid;
-   grid-template-columns: 1fr 1fr;
-   gap: 20px; */
+
+
+.about-info{
    display: flex;
-   /* flex-wrap: wrap; */
+
+   &__my-pic{
+      padding: 2rem;
+      width: 50%;
+
+      &--img{
+         width: 80%;
+       }
+   }
+   &__my-info{
+      padding: 2rem;
+    width: 50%;
+   }
+
 }
 
-.myPic{
-   padding: 2rem;
-   width: 50%;
-}
-.myInfo{
-    padding: 2rem;
-    width: 50%;
-}
-img{
-   width: 80%;
-   /* height: 400px; */
-}
+
