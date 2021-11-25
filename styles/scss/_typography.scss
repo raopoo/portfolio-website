@@ -1,4 +1,5 @@
 @use "pallette";
+@use "media";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,600&display=swap");
 
 $primaryfont: "Montserrat", sans-serif;
@@ -7,12 +8,10 @@ body {
     font-family: $primaryfont;
 }
 
-// .myinfo{
-//     font-weight: 600;
-// }
+
 
 .text {
-    color: pallette.$textsecondary;
+    color: pallette.$textprimary;
     display: block;
     text-transform: uppercase;
 
@@ -20,12 +19,34 @@ body {
         font-size: 40px;
         font-weight: 600;
         letter-spacing: 15px;
+
+        @include media.phone{
+            font-size: 30px;
+            font-weight: 400;
+            letter-spacing: 0;
+        }
+        @include media.tablet{
+            font-size: 30px;
+            font-weight: 400;
+            letter-spacing: 3;
+        }
     }
 
     &__secondaryHeading {
         font-size: 30px;
         font-weight: 500;
         letter-spacing: 15px;
+
+        @include media.phone{
+            font-size: 20px;
+            font-weight: 400;
+            letter-spacing: 0;
+        }
+        @include media.tablet{
+            font-size: 20px;
+            font-weight: 400;
+            letter-spacing: 3;
+        }
     }
 }
 
@@ -33,13 +54,65 @@ body {
     &__header{
         font-size: 30px;
         font-weight: 600;
+
+        @include media.phone{
+            font-size: 22px;
+            font-weight: 500;
+        }
+        @include media.tablet{
+            font-size: 25px;
+            font-weight: 500;
+        }
     }
     &__secondary-header{
         font-size: 22px;
         font-weight: 500;
+
+        @include media.phone{
+            font-size: 18px;
+            font-weight: 500;
+        }
+        @include media.tablet{
+            font-size: 20px;
+            font-weight: 500;
+        }
     }
     &__para{
         font-size: 18px;
         font-weight: 400;
+
+        @include media.phone{
+            font-size: 12px;
+            font-weight: 400;
+        }
+        @include media.tablet{
+            font-size: 15px;
+            font-weight: 500;
+        }
     }
 }
+
+.header{
+    &__main{
+        @include media.phone{
+            font-size: 3rem;
+            font-weight: 400;
+            text-align: start;
+            padding: 0;
+            margin: 0;
+        }
+
+    }
+    
+    &__para{
+        @include media.phone{
+            font-size: 1.5rem;
+            font-weight: 400;
+            text-align: start;
+            padding: 0;
+            margin: 0;
+        }
+
+    }
+ }
+    

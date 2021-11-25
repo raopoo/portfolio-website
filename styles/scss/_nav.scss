@@ -1,17 +1,31 @@
+@use "media";
 
-.nav{
-    &__unordered{
+.nav {
+    &__unordered {
         display: flex;
-    justify-content:space-around;
-    align-items: center;
-    list-style-type: none;
+        justify-content: space-around;
+        align-items: center;
+        list-style-type: none;
 
-    &__list{
-        margin: 20px;
-        &__item{
-            text-decoration: none;
-            color: white;
+        @include media.phone {
+            display: block;
         }
-    }
+        @include media.tablet {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        @include media.laptop{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        &__list {
+            margin: 20px;
+            &__item {
+                text-decoration: none;
+                color: white;
+            }
+        }
     }
 }

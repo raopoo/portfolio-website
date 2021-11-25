@@ -1,0 +1,30 @@
+
+$phone-size : 600px;
+$tablet-size: 900px;
+$laptop-size: 1200px;
+
+
+@mixin phone {
+    @media screen and (max-width: $phone-size) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (min-width:($phone-size + 1)) and (max-width: $tablet-size) {
+        @content;
+    }
+}
+
+
+@mixin laptop {
+    @media screen and (min-width: ($tablet-size + 1)) {
+        @content;
+    }
+}
+
+@mixin form {
+    @media screen and (max-width: 480px) {
+        @content;
+    }
+}

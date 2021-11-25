@@ -1,19 +1,38 @@
-
+@use 'media';
 
 .about-info{
    display: flex;
+   @include media.phone{
+      display: block;
+  }
+  @include media.tablet{
+   display: block;
+  }
 
    &__my-pic{
       padding: 2rem;
       width: 50%;
+      @include media.phone{
+         width: 100%; 
+      }
+      @include media.tablet{
+         width: 100%; 
+      }
 
       &--img{
-         width: 80%;
+         width: 80%; 
        }
    }
    &__my-info{
       padding: 2rem;
     width: 50%;
+
+    @include media.phone{
+      width: 80%;
+   }
+   @include media.tablet{
+      width: 80%;
+   }
    }
 
 }

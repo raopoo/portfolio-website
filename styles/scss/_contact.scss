@@ -1,3 +1,5 @@
+@use 'media';
+@use 'pallette';
 
 #contact-form{
     height: 15rem; 
@@ -7,6 +9,11 @@
     gap: 20px;
     border: 2px black solid;
     padding: 2rem;
+    @include media.form{
+        height: 50vh; 
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
 }
 .formDiv{
     /* text-align: center; */
@@ -14,22 +21,22 @@
     justify-content: center;
     align-items: center;
 }
-.cardDiv{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
-}
-.card{
-    border: black 2px solid;
-    padding: 1rem;
-    margin: 2rem;
-    border-radius: 10px;
-}
-.messageDiv{
-    text-align: center;
-    margin-top: 20px;
-}
+// .cardDiv{
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     margin-top: 2rem;
+// }
+// .card{
+//     border: black 2px solid;
+//     padding: 1rem;
+//     margin: 2rem;
+//     border-radius: 10px;
+// }
+// .messageDiv{
+//     text-align: center;
+//     margin-top: 20px;
+// }
 .btn{
     text-align: center;
     font-size: 1rem;
@@ -40,18 +47,18 @@
     height: 2rem;
     /* width: 20rem; */
     margin-top: 1rem;
-    box-shadow: inset 0 0 0 0 rgb(5, 48, 61);
+    //box-shadow: inset 0 0 0 0 rgb(5, 48, 61);
     transition: ease-out 0.3s;
     outline: none;
 }
-.btn:hover{
-    box-shadow: inset 50rem 0 0 0 rgb(5, 48, 61);
-    color: white;
-    cursor: pointer;
-}
-#deleteBtn{
-    width: 30rem;
-}
+// .btn:hover{
+//     box-shadow: inset 50rem 0 0 0 rgb(5, 48, 61);
+//     color: white;
+//     cursor: pointer;
+// }
+// #deleteBtn{
+//     width: 30rem;
+// }
 #clearBtn{
     width: 10rem;
 }
@@ -71,8 +78,8 @@
 
 /* Modal Content/Box */
 .modal-content {
-  display: flex;
-  background-color: #407777;
+  display: block;
+  background-color: pallette.$btnhover;
   border-radius: 30px;
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
@@ -81,7 +88,7 @@
   text-align: center;
   padding-left: 2rem;
   margin-left: 2rem;
-  color: #f8f2f2;
+  color: pallette.$textprimary;
 }
 .modal-content button{
   /* padding: 1rem; */
@@ -89,7 +96,7 @@
   height: 2rem;
   width: 10rem;
   border-radius: 10px;
-  background-color: #979797;
+  background-color: pallette.$btnprimary ;
   color: white;
   border: none;
 }

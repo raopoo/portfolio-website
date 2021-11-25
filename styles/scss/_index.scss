@@ -1,3 +1,6 @@
+@use 'media';
+@use 'pallette';
+
 *{
     margin: 0;
     padding: 0;
@@ -15,6 +18,13 @@
         transform: translate(-50%,-50%);
         text-align: center;
 
+        @include media.phone{
+            margin-top: 50px;
+        }
+        @include media.tablet{
+            margin-top: 50px;
+        }
+
     }
 }
 
@@ -30,8 +40,8 @@
     margin: 2rem;
     transition: all 0.2s;
     border-radius: 2rem;
-    background-color: rgba(241, 241, 241, 0.493);
-    color:rgb(25, 5, 44);
+    background-color: pallette.$btnprimary;
+    color: pallette.$textsecondary;
     text-decoration: none;
     position: relative;
     /* line-height: 10rem; */  
