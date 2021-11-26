@@ -7,11 +7,11 @@ let modal = document.getElementById("myModal");
 let closeBtn = document.getElementById("closeBtn");
 const submitBtn = document.getElementById("submitBtn");
 const clearBtn = document.getElementById("clearBtn");
-// const deleteBtn = document.getElementById("deleteBtn");
+
 
 //Clear Form function
 const clearForm = () => {
-    name.value = "";
+    user_name.value = "";
     email.value = "";
     message.value = "";
 };
@@ -21,26 +21,9 @@ const clearForm = () => {
 })();
 
 
-// window.onload = function() {
-//   document.getElementById('contact-form').addEventListener('submit', function(event) {
-//       event.preventDefault();
-//       displayModal();
-//       clearForm();
-//       // generate a five digit number for the contact_number variable
-//       this.contact_number.value = Math.random() * 100000 | 0;
-//       // these IDs from the previous steps
-//       emailjs.sendForm('contact_service', 'contact_form', this)
-//           .then(function() {
-//               console.log('SUCCESS!');
-//           }, function(error) {
-//               console.log('FAILED...', error);
-//           });
-//   });
-// }
-
 const sendMail = (e) =>{
     e.preventDefault();
-    console.log(name.value, email.value, message.value)
+    console.log(user_name.value, email.value, message.value)
     let contactParams = {
         user_name : user_name.value,
         user_email: email.value,
@@ -48,6 +31,7 @@ const sendMail = (e) =>{
     };
     emailjs.send("service_1q50dc6", "contact-form", contactParams,
     "user_99vg3YcmXzSCVIjuvJ5Wh").then(function(res) {})
+    clearForm();
     console.log(contactParams);
 }
 
