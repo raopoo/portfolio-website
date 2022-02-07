@@ -31,6 +31,7 @@ const sendMail = (e) =>{
     };
     emailjs.send("service_1q50dc6", "contact-form", contactParams,
     "user_99vg3YcmXzSCVIjuvJ5Wh").then(function(res) {})
+    displayModal();
     clearForm();
     console.log(contactParams);
 }
