@@ -6,8 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Pooja's Portfolio</title>
         <link rel="stylesheet" href="./styles/css/main.css" />
-        <!-- <link rel="stylesheet" href="./styles/styles.css"> -->
-        <link rel="stylesheet" href="./styles/projects.css" />
     </head>
     <body>
         <nav>
@@ -163,7 +161,7 @@
         </main>
         <footer class="footer">
             <p>
-                Copyright &copy; 2021 All Rights Reserved by
+                Copyright &copy; <span id="year"></span> All Rights Reserved by
                 <a
                     class="footer__link"
                     href="https://www.linkedin.com/in/pooja-r-a-o/"
@@ -184,5 +182,8 @@
                 /></a>
             </div>
         </footer>
+        <script>
+            document.getElementById("year").innerHTML = new Date().getFullYear();
+            </script>
     </body>
 </html>

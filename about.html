@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/css/main.css">
-    <link rel="stylesheet" href="./styles/about.css">
-    <!-- <link rel="stylesheet" href="./styles/styles.css"> -->
     <title>About Page</title>
 </head>
 <body>
@@ -26,17 +24,17 @@
             <div class="about-info__my-info">
                 <h1 class="myinfo-text__header">I wanted to say Hello!!</h1>
                 <h3 class="myinfo-text__secondary-header"> .. and it is nice to meet you! <h3><br>
-                <p class="myinfo-text__para">I am a Melbourne based web developer who loves all things tech, food and travel.</p><br>
-                <p class="myinfo-text__para">I was born in India and lived in multiple cities in India and UK. We moved to Australia 2 years ago. </p><br>
-                <p class="myinfo-text__para">I come with 5+ years of experience in the customer service industry. I made a decision to take a career break to care for my family. The break also gave me the opportunity to travel and live in the UK and Europe for a couple of years. </p><br>
-                <p class="myinfo-text__para">I have had the opportunity to volunteer at salvos store for a few months that I will cherish all my life. I would love to try new  volunteering opportunities in future too.</p><br>
-                <p class="myinfo-text__para">I am a full stack web development bootcamp graduate where I learnt technologies like HTML, CSS, JavaScript, Bootstrap, React, SQL, Node JS and Express. I would love to start my journey as a developer at a firm where I can contribute in making customer centric products. </p>
+                <p class="myinfo-text__para">I am a Melbourne based developer who loves all things tech, food and travel.</p><br>
+                <p class="myinfo-text__para">I was born in India and have lived in multiple cities in India and UK. We moved to Australia in 2020. </p><br>
+                <p class="myinfo-text__para">I have worked as a consultant at companies like Accenture and Thoughtworks for over a year. I also have 5 years of experience working in the customer service industry.  </p><br>
+                <p class="myinfo-text__para">I have had the opportunity to volunteer at salvos store for a few months that I will cherish all my life. I would love to try new volunteering opportunities in future too.</p><br>
+                <p class="myinfo-text__para">I specialise in front end development and have worked with technologies like HTML, CSS, JavaScript, Bootstrap, React, Sass, SQL, Node JS and Express. I am looking for opportunities that would help me grow as a full stack developer at a firm where I can contribute in making customer centric products. </p>
 
             </div>
         </div> 
     </main>
     <footer class="footer">
-          <p>Copyright &copy; 2021 All Rights Reserved by <a class="footer__link" href="https://www.linkedin.com/in/pooja-r-a-o/" target="_blank">Pooja Rao</a>.
+          <p>Copyright &copy; <span id="year"></span> All Rights Reserved by <a class="footer__link" href="https://www.linkedin.com/in/pooja-r-a-o/" target="_blank">Pooja Rao</a>.
 
             <div class="footer__icons">
                 <p>Contact Me</p>
@@ -46,5 +44,8 @@
                 
              </div>
     </footer>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+        </script>
 </body>
 </html>

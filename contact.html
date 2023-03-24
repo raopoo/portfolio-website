@@ -6,8 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/css/main.css">
-    <!-- <link rel="stylesheet" href="./styles/styles.css"> -->
-    <link rel="stylesheet" href="./styles/contact.css">
     <title>Pooja's Portfolio</title>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 </head>
@@ -52,17 +50,20 @@
         </div>
     </main>
     <footer class="footer">
-      <p>Copyright &copy; 2021 All Rights Reserved by <a class="footer__link" href="https://www.linkedin.com/in/pooja-r-a-o/" target="_blank">Pooja Rao</a>.
+      <p>Copyright &copy; <span id="year"></span> All Rights Reserved by <a class="footer__link" href="https://www.linkedin.com/in/pooja-r-a-o/" target="_blank">Pooja Rao</a>.
         
         <div class="footer__icons">
           <p>Contact Me</p>
-          <a href="mailto:raopooj@gmail.com"><img src="./images/email.png" alt="" /></a> 
-          <a href="https://github.com/raopoo"><img src="./images/github.png" alt="" /></a>
-           <a href="https://www.linkedin.com/in/pooja-r-a-o/"> <img src="./images/linkedin.png" alt="" /></a>
+          <a href="mailto:raopooj@gmail.com"><img src="./images/email.png" alt="Email icon" /></a> 
+          <a href="https://github.com/raopoo"><img src="./images/github.png" alt="Github icon" /></a>
+           <a href="https://www.linkedin.com/in/pooja-r-a-o/"> <img src="./images/linkedin.png" alt="LinkedIn Icon" /></a>
           
        </div>
 </footer>
     <script src="./form.js" async></script>
+    <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+      </script>
 </body>
 
 </html>
